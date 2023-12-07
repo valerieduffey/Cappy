@@ -1,0 +1,38 @@
+{
+  "name": "systembreakers",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all --parallel start-server start-client",
+    "start-server": "node server/index.js",
+    "heroku-postbuild": "npm rebuild bcrypt --build-from-source && cd client && npm install && npm run build",
+    "start-client": "cd client && npm start",
+    "build": "react-scripts build --template ../../"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "express": "^4.17.1",
+    "js-cookie": "^3.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.19.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

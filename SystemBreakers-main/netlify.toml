@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"  # or your build command
+  publish = "client/build"   # specify the client-side build directory
+
+[build.environment]
+  NODE_VERSION = "14"  # or your Node.js version
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[dev]
+  command = "npm run start:dev"  # Adjust this based on your local development setup
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
