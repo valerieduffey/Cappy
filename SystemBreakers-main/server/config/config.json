@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "GrapeSauce12",
+    "password": "Carolina",
     "database": "whatcook",
     "host": "localhost",
     "dialect": "mysql"
